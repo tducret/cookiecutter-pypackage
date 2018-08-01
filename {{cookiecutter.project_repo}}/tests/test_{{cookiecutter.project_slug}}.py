@@ -3,12 +3,13 @@
 
 """Tests for `{{ cookiecutter.project_slug }}` package."""
 
+# To be tested with : python3 -m pytest -vs tests/test_{{ cookiecutter.project_slug }}.py
+
 import pytest
 import os
 from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
 
 # Get useful environment variables
-
 VAR = os.environ.get('VAR', None)
 
 
