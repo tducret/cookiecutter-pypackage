@@ -4,7 +4,7 @@
 
 Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 
-## Quickstart
+## Requirements
 
 Install the latest Cookiecutter if you haven't installed it yet (this requires
 Cookiecutter 1.4.0 or higher) :
@@ -13,20 +13,14 @@ Cookiecutter 1.4.0 or higher) :
 pip install -U cookiecutter
 ```
 
-Generate a Python package project :
-
-```bash
-cookiecutter https://github.com/tducret/cookiecutter-pypackage.git
-```
-
-*Copy the short description for the following steps*
-
-Then:
+## Steps
 
 - Create a repo on [Github](https://github.com/new) with the name of the folder you just created > [REPOSITORY]
+- *Copy the short description for the following steps*
+- Execute in the terminal `git clone https://github.com/tducret/[REPOSITORY].git`
+- Execute the cookiecutter with `cookiecutter https://github.com/tducret/cookiecutter-pypackage.git`
 - Add keywords related to the project on Github (finding the project is easier)
 - Add the same keywords in setup.py and check if everything is okay
-- Execute in the terminal `git clone https://github.com/tducret/[REPOSITORY].git`
 - cd [REPOSITORY]
 - Update requirements.txt (if needed)
 - Update README.md
