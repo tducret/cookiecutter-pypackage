@@ -24,5 +24,5 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 - Add topics (keywords) related to the project on Github (finding your project will be easier)
 - Add the repo to your [Travis-CI account](https://travis-ci.org/profile/tducret) (Click on the `Sync` button if the repo doesn't appear)
 - Run the Travis CLI command `travis encrypt --add deploy.password` to encrypt your PyPI password in Travis config
-- Add the repo to your [Coveralls account](https://coveralls.io/repos/new)
+- Add the repo to your [Coveralls account](https://coveralls.io/repos/new) (Click on the `Sync repos` button if the repo doesn't appear)
 - Release your package by pushing a new tag to master
