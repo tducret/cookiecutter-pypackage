@@ -22,15 +22,15 @@ pip install -U cookiecutter
 - Execute the cookiecutter with `cookiecutter https://github.com/tducret/cookiecutter-pypackage.git`
 - Move the content of the folder to the git repository `mv [REPOSITORY]/* ../[REPOSITORY]`
 - Go up and delete empty temp folder `cd ..; rm -rf ./tmp`
-- Add keywords related to the project on Github (finding the project is easier)
-- Add the same keywords in setup.py and check if everything is okay
-- cd [REPOSITORY]
+- `cd [REPOSITORY]`
 - Update requirements.txt (if needed)
 - Update README.md
+- Add keywords in `setup.py` and check if everything is okay
 - Remove *_cli.py if the project doesn't need a CLI tool
 - Add the repo to your [Travis-CI account](https://travis-ci.org/profile/tducret)
 - Add the repo to your [Coveralls account](https://coveralls.io/repos/new)
 - Run the Travis CLI command `travis encrypt --add deploy.password` to encrypt your PyPI password in Travis config
-- When everything is in place, add the files to git : ```git add .```
-- commit it and push it
+- When everything is in place, add the files to git : `git add .`
+- commit it and push it : `git commit -am "First commit"; git push`
+- Add keywords related to the project on Github (finding your project will be easier)
 - Release your package by pushing a new tag to master
