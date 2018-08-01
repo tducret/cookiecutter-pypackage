@@ -22,7 +22,7 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 - Remove *_cli.py if the project doesn't need a CLI tool
 - When everything is in place, add the files to git : `git add .`
 - commit it and push it : `git commit -am "First commit"; git push`
-- Add keywords related to the project on Github (finding your project will be easier)
+- Add topics (keywords) related to the project on Github (finding your project will be easier)
 - Add the repo to your [Travis-CI account](https://travis-ci.org/profile/tducret)
 - Run the Travis CLI command `travis encrypt --add deploy.password` to encrypt your PyPI password in Travis config
 - Add the repo to your [Coveralls account](https://coveralls.io/repos/new)
