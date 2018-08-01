@@ -18,7 +18,10 @@ pip install -U cookiecutter
 - Create a repo on [Github](https://github.com/new) with a desired [REPOSITORY] name
 - Fill the short description on Github and copy it for the following steps
 - Execute in the terminal `git clone https://github.com/tducret/[REPOSITORY].git`
+- Create a temp folder and move inside `mkdir tmp; cd tmp` (because cookiecutter won't create the folder if a repository with the same name exists)
 - Execute the cookiecutter with `cookiecutter https://github.com/tducret/cookiecutter-pypackage.git`
+- Move the content of the folder to the git repository `mv [REPOSITORY]/* ../[REPOSITORY]`
+- Go up and delete empty temp folder `cd ..; rm -rf ./tmp`
 - Add keywords related to the project on Github (finding the project is easier)
 - Add the same keywords in setup.py and check if everything is okay
 - cd [REPOSITORY]
