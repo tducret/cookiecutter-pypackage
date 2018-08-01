@@ -7,6 +7,7 @@ from {{cookiecutter.project_slug}} import __version__
 
 # Usage : {{cookiecutter.project_slug}}_cli.py --help
 
+
 @click.command()
 @click.option(
     '--param1', '-p',
