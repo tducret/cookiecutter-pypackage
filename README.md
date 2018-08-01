@@ -6,12 +6,8 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 
 ## Requirements
 
-Install the latest Cookiecutter if you haven't installed it yet (this requires
-Cookiecutter 1.4.0 or higher) :
-
-```bash
-pip install -U cookiecutter
-```
+- Cookiecutter : `pip install -U cookiecutter`
+- Travis CLI : [Installation](https://github.com/travis-ci/travis.rb#installation)
 
 ## Steps
 
