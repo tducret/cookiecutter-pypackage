@@ -10,10 +10,10 @@ except ImportError:  # For pip <= 9
     from pip.req import parse_requirements
 
 
-__version__ = {{ cookiecutter.version }}  # Should match with __init.py__
+__version__ = '{{ cookiecutter.version }}'  # Should match with __init.py__
 _GITHUB_URL = 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo }}',
-_KEYWORDS = ['api', {{ cookiecutter.project_slug }}, 'parsing',
-              'python-wrapper', 'scraping', 'scraper', 'parser']
+_KEYWORDS = ['api', '{{ cookiecutter.project_slug }}', 'parsing',
+             'python-wrapper', 'scraping', 'scraper', 'parser']
 {% if cookiecutter.command_line_interface == 'y' -%}
 _SCRIPTS = ['{{ cookiecutter.project_slug }}_cli.py']
 # To delete here + 'scripts' dans setup()

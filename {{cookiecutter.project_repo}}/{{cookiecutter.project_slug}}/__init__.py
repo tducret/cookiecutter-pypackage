@@ -3,10 +3,12 @@
 """Top-level package for {{ cookiecutter.project_name }}."""
 
 import requests
+from requests import ConnectionError
 
 __author__ = """{{ cookiecutter.full_name }}"""
 __email__ = '{{ cookiecutter.email }}'
 __version__ = '{{ cookiecutter.version }}'
+
 
 class Client(object):
     """ Do the requests with the servers """
@@ -34,6 +36,7 @@ class Client(object):
                 'Status code {status} for url {url}\n{content}'.format(
                     status=ret.status_code, url=url, content=ret.text))
         return ret
+
 
 class MyClass(object):
     """ Class to... """
