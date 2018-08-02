@@ -11,7 +11,7 @@ except ImportError:  # For pip <= 9
 
 
 __version__ = '{{ cookiecutter.version }}'  # Should match with __init.py__
-_GITHUB_URL = 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo }}',
+_GITHUB_URL = 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo }}'
 _KEYWORDS = ['api', '{{ cookiecutter.project_slug }}', 'parsing',
              'python-wrapper', 'scraping', 'scraper', 'parser']
 {% if cookiecutter.command_line_interface == 'y' -%}
@@ -63,3 +63,13 @@ setup(
     python_requires='>=3',
     tests_require=['pytest'],
 )
+
+# ------------------------------------------
+# To upload a new version on pypi
+# ------------------------------------------
+# Make sure everything was pushed (with a git status)
+# (or git commit --am "Comment" and git push)
+# export VERSION=<VERSION>; git tag $VERSION -m "First version"; git push --tags
+
+# If you need to delete a tag
+# git push --delete origin $VERSION; git tag -d $VERSION
