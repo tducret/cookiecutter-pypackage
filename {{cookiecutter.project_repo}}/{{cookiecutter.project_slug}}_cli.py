@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-"""CLI tool for {{cookiecutter.project_slug}}."""
+"""CLI tool for {{cookiecutter.project_slug}}"""
 import sys
 import click
-from {{cookiecutter.project_slug}} import __version__
+import {{cookiecutter.project_slug}}
 
 # Usage : {{cookiecutter.project_slug}}_cli.py --help
 
@@ -20,10 +20,6 @@ from {{cookiecutter.project_slug}} import __version__
     type=str,
     help='example param with default value',
     default='fr'
-)
-@click.version_option(
-    version=__version__,
-    message='%(prog)s, based on [{{cookiecutter.project_slug}}] package version %(version)s'
 )
 def main(param1, defaultparam2):
     """ Example main """
