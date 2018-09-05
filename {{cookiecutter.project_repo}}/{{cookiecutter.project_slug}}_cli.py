@@ -19,7 +19,8 @@ import {{cookiecutter.project_slug}}
     '--paramwithdefaultvalue', '-d',
     type=str,
     help='example param with default value',
-    default='fr'
+    default='fr',
+    show_default=True,
 )
 @click.option(
     '--requiredparam', '-f',
@@ -32,7 +33,12 @@ import {{cookiecutter.project_slug}}
     is_flag=True,
     help='flag param (True if set, False if not)',
 )
-def main(paramwithenvvar, paramwithdefaultvalue, requiredparam, flagparam):
+@click.option(
+    '--choiceparam',
+    type=click.Choice(['val1', 'val2'])
+)
+def main(paramwithenvvar, paramwithdefaultvalue, requiredparam, flagparam,
+         choiceparam):
     """
     !!! TO BE UPDATED !!!
     Description of the CLI tool,
