@@ -6,8 +6,10 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 
 ## Requirements
 
-- Cookiecutter : `pip install -U cookiecutter`
+- Cookiecutter : `pip3 install -U cookiecutter`
 - Travis CLI : [Installation](https://github.com/travis-ci/travis.rb#installation)
+- Pytest : `pip3 install -U pytest`
+- Pytest coverage : `pip3 install -U pytest-cov`
 
 ## Steps
 
