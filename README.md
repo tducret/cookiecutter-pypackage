@@ -11,7 +11,7 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 
 ## Steps
 
-- Create a repo on [Github](https://github.com/new) with a desired [REPOSITORY] name
+- Create a repo on [Github](https://github.com/new) with a desired [REPOSITORY] name (ex : `myproject-python`)
 - Fill the short description on Github and copy it for the following steps
 - Execute in the terminal `git clone https://github.com/tducret/[REPOSITORY].git`
 - Execute the cookiecutter with `cookiecutter -f https://github.com/tducret/cookiecutter-pypackage.git` (`-f` is to overwrite the contents of the output directory if it already exists)
