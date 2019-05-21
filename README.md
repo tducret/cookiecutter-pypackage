@@ -18,10 +18,10 @@ Forked from [audreyr repo](https://github.com/audreyr/cookiecutter-pypackage/)
 - Execute in the terminal `git clone https://github.com/tducret/[REPOSITORY].git`
 - Execute the cookiecutter with `cookiecutter -f https://github.com/tducret/cookiecutter-pypackage.git` (`-f` is to overwrite the contents of the output directory if it already exists)
 - `cd [REPOSITORY]`
-- Update requirements.txt (if needed)
+- Update requirements-to-freeze.txt (if needed)
 - Update README.md
 - Add keywords in `setup.py` and check if everything is okay
-- Remove *_cli.py if the project doesn't need a CLI tool
+- Remove `scripts`folder if the project doesn't need a CLI tool
 - When everything is in place, add the files to git, commit it and push it : `git add .; git commit -am "First commit"; git push`
 - Add topics (keywords) related to the project on Github (finding your project will be easier)
 - Add the repo to your [Travis-CI account](https://travis-ci.org/profile/tducret) (Click on the `Sync` button if the repo doesn't appear)
