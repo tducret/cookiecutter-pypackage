@@ -5,7 +5,7 @@ import sys
 import click
 import {{cookiecutter.project_slug}}
 
-# Usage : {{cookiecutter.project_slug}}_cli.py --help
+# Usage : {{cookiecutter.cli_name}} --help
 
 
 @click.command()
@@ -37,7 +37,7 @@ import {{cookiecutter.project_slug}}
     '--choiceparam',
     type=click.Choice(['val1', 'val2'])
 )
-def main(paramwithenvvar, paramwithdefaultvalue, requiredparam, flagparam,
+def cli(paramwithenvvar, paramwithdefaultvalue, requiredparam, flagparam,
          choiceparam):
     """
     !!! TO BE UPDATED !!!
@@ -47,4 +47,4 @@ def main(paramwithenvvar, paramwithdefaultvalue, requiredparam, flagparam,
     print()
 
 if __name__ == "__main__":
-    main()
+    cli()

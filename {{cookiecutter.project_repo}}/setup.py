@@ -14,11 +14,6 @@ __version__ = '{{ cookiecutter.version }}'  # Should match with __init.py__
 _GITHUB_URL = 'https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_repo }}'
 _KEYWORDS = ['api', '{{ cookiecutter.project_slug }}', 'parsing',
              'python-wrapper', 'scraping', 'scraper', 'parser']
-{% if cookiecutter.command_line_interface == 'y' -%}
-_SCRIPTS = ['{{ cookiecutter.project_slug }}_cli.py']
-# To delete here + 'scripts' dans setup()
-# if no command is used in the package
-{% endif %}
 
 install_reqs = parse_requirements('requirements.txt', session='hack')
 requirements = [str(ir.req) for ir in install_reqs]
@@ -35,9 +30,12 @@ setup(
     name='{{ cookiecutter.project_slug }}',
     packages=find_packages(),
     package_data={},
-{% if cookiecutter.command_line_interface == 'y' -%}
-    scripts=_SCRIPTS,
-{% endif %}
+{%- if cookiecutter.command_line_interface == 'Click' -%}
+    entry_points='''
+        [console_scripts]
+        {{ cookiecutter.cli_name }}={{ cookiecutter.project_slug }}.scripts.{{ cookiecutter.cli_name }}:cli
+    ''',
+{%- endif %}
     version=__version__,
 {%- if cookiecutter.open_source_license in license_classifiers %}
     license="{{ cookiecutter.open_source_license }}",
