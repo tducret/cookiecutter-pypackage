@@ -1,14 +1,15 @@
 {
-  "full_name": "Thibault Ducret",
-  "email": "hello@tducret.com",
-  "github_username": "tducret",
   "project_name": "Readable project name (Github page title)",
   "project_repo": "{{ cookiecutter.project_name.lower().replace(' ', '') + '-python' }}",
   "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
-  "project_short_description": "Non official Python wrapper for...",
+  "cli_name": "{{ cookiecutter.project_slug }}",
+  "project_short_description": "Non official Python wrapper for {{ cookiecutter.project_name }}",
+  "command_line_interface": ["Click", "No command-line interface"],
+  "use_pypi_deployment_with_travis": "y",
+  "full_name": "Thibault Ducret",
+  "email": "hello@tducret.com",
+  "github_username": "tducret",
   "pypi_username": "thibdct",
   "version": "0.0.1",
-  "use_pypi_deployment_with_travis": "y",
-  "command_line_interface": ["Click", "No command-line interface"],
   "open_source_license": ["MIT license", "BSD license", "ISC license", "Apache Software License 2.0", "GNU General Public License v3", "Not open source"]
 }
