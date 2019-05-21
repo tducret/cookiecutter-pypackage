@@ -1,3 +1,0 @@
-requests>=2.6.0
-{% if cookiecutter.command_line_interface == 'y' -%}
-click>=6.7{% endif %}
